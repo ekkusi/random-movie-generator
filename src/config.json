@@ -1,0 +1,4 @@
+{
+  "movieApiBaseURL": "https://api.themoviedb.org/3",
+  "imgApiBaseURL": "https://image.tmdb.org/t/p"
+}
