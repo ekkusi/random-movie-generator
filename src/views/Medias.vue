@@ -134,6 +134,7 @@ export default class Medias extends Vue {
     this.selectedGenreIds = [];
     this.selectedStartYear = null;
     this.selectedEndYear = null;
+    this.media = null;
     this.updateGenres();
   }
 
