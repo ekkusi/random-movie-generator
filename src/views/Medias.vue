@@ -80,7 +80,7 @@
     <p v-if="filterError" class="medias__filters__error">
       {{ filterError }}
     </p>
-    <Media v-if="movie && !loading" :media="movie" />
+    <Media v-if="media && !loading" :media="media" />
     <h3 class="medias__loading" v-if="loading">Loading...</h3>
     <p class="medias__error" v-if="error">{{ error }}</p>
   </div>
@@ -109,7 +109,7 @@ export default class Medias extends Vue {
   @Prop({ required: true, type: String })
   private readonly mediaType!: MediaType;
 
-  movie: IMedia | null = null;
+  media: IMedia | null = null;
 
   loading = false;
 
