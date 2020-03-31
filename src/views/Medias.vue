@@ -153,13 +153,13 @@ export default class Medias extends Vue {
   async updateMedia() {
     this.loading = true;
     this.error = null;
-    this.movie = null;
+    this.media = null;
     try {
-      const randomMovie = await MovieApi.getRandomMedia(
+      const randomMedia = await MovieApi.getRandomMedia(
         this.selectedFilters,
         this.mediaType
       );
-      this.movie = randomMovie;
+      this.media = randomMedia;
       this.loading = false;
     } catch (error) {
       this.error = error.message;
